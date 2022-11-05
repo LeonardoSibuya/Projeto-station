@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'plays';
-    src: url('../playstation.ttf'); format('truetype');
+    src: url('playstation.ttf'); format('truetype');
     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: 'space';
-    src: url('../space.ttf'); format('truetype');
+    src: url('space.ttf'); format('truetype');
     font-weight: normal;
     font-style: normal
 }
@@ -157,11 +157,11 @@ a > div.jogo:hover {
 }
 
 div#fifa {
-    background-image: url(../imagens/fifa-23-logo-red.jpg);
+    background-image: url(imagens/fifa-23-logo-red.jpg);
 }
 
 div#gow {
-    background-image: url(../imagens/God_of_War_2018_red.png);
+    background-image: url(imagens/God_of_War_2018_red.png);
 }
 
 iframe#game {

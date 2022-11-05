@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'plays';
-    src: url('../playstation.ttf'); format('truetype');
+    src: url('playstation.ttf'); format('truetype');
     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: 'space';
-    src: url('../space.ttf'); format('truetype');
+    src: url('space.ttf'); format('truetype');
     font-weight: normal;
     font-style: normal
 }
@@ -126,15 +126,15 @@ article > a > div.imghome {
 }
 
 div#games {
-    background-image: url(../imagens/Foto\ controle-full.jpg);
+    background-image: url(imagens/Foto\ controle-full.jpg);
 }
 
 div#filmes {
-    background-image: url(../imagens/foto\ cinema-full.jpg);
+    background-image: url(imagens/foto\ cinema-full.jpg);
 }
 
 div#series {
-    background-image: url(../imagens/Foto\ serie\ full.jpg);
+    background-image: url(imagens/Foto\ serie\ full.jpg);
 }
 
 article > a > div.imghome:hover {

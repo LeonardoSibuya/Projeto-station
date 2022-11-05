@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'plays';
-    src: url('../playstation.ttf'); format('truetype');
+    src: url('playstation.ttf'); format('truetype');
     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: 'space';
-    src: url('../space.ttf'); format('truetype');
+    src: url('space.ttf'); format('truetype');
     font-weight: normal;
     font-style: normal
 }
