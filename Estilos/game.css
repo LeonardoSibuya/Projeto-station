@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'plays';
+    src: url('../playstation.ttf'); format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'space';
+    src: url('../space.ttf'); format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+:root {
+    --cor1: #c7c7cc;
+    --cor2: #0077E2;
+    --cor3: #519ff9a1;
+    --cor4: #1353D4;
+    --cor5: #003B9B;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor3);
+    min-height: 100vh;
+}
+
+header {
+    background-image: linear-gradient(to right, var(--cor5), var(--cor2));
+    padding: 0px;
+    text-align: center;
+    margin: 0px 15px 0px 15px;
+    box-shadow: 0px 0px 10px #00000084;
+}
+
+header > h1 {
+    color: var(--cor1);
+    max-width: 300px;
+    margin: auto;
+    font-family: plays;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 0px #00000084;
+}
+
+header > a {
+    text-decoration: none;
+    color: var(--cor1);
+    max-width: 300px;
+    margin: auto;
+    font-family: plays;
+    text-shadow: 2px 2px 0px #00000084;
+}
+
+header > a:hover {
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+nav {
+    background-color: var(--cor5);
+    margin: 0px 15px 0px 15px;
+    padding: 0px 0px 10px 20px;
+    border-radius: 0px 0px 30px 30px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor2));
+}
+
+nav > a {
+    font-family: plays;
+    font-size: 13px;
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 8px;
+    border-radius: 10px;
+    transition-duration: .5s;
+    text-shadow: 2px 2px 0px #00000084;
+}
+
+nav a:hover {
+    background-color: var(--cor4);
+    color: #55f6ff;
+    
+}
+
+main {
+    height: 90vh;
+    min-width: 300px;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #0000008d;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    background-color: var(--cor1);
+}
+
+article#titulo > h1 {
+    background-image: linear-gradient(to right, #1353d4c3, #0078e204);
+    border-radius: 25px 0px 0px 25px;
+    max-width: 250px;
+    color: #2c2929e0;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    font-size: 3em;
+    font-family: space, Arial, Helvetica, sans-serif;
+    margin: auto;
+    text-shadow: 1px 0px 2px #0000008c;
+}
+
+article#titulo p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 550;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    min-width: 400px;
+}
+
+article#conteudo {
+    margin: auto;
+}
+
+div.jogo {
+    display: inline-block;
+    margin: 20px 15px 15px 15px;
+    height: 140px;
+    width: 240px;
+
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    border-radius: 30px;
+    border: 1px solid var(--cor4);
+    box-shadow: 0px 0px 8px #0000008d; 
+}
+
+a > div.jogo:hover {
+    box-shadow: 0px 0px 10px #0b5cff;
+    height: 150px;
+    width: 250px;
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+
+div#fifa {
+    background-image: url(../imagens/fifa-23-logo-red.jpg);
+}
+
+div#gow {
+    background-image: url(../imagens/God_of_War_2018_red.png);
+}
+
+iframe#game {
+    display: block;
+    height: 55%;
+    width: 60%;
+
+    padding: 10px;
+    
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    border: 2px solid var(--cor4);
+
+    border-radius: 30px;
+    box-shadow: 0px 0px 8px #0000008d;
+    background-color: #ffffffa8;
+}
+
+footer {
+    text-align: center;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor2));
+    margin: 0px 13px 0px 13px;
+    box-shadow: 0px 0px 10px #00000084;
+    border-radius: 30px 30px 0px 0px;
+    padding: 13px 6px 8px 6px;
+}
+
+footer > p {
+    display: inline;
+    font-weight: bold;
+    font-family: plays;
+    text-shadow: 2px 2px 0px #00000084;
+    color: var(--cor1);
+    padding: 0px 1em 0px 1em;
+    max-width: 300px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+footer a:hover {
+    text-decoration: underline;
+    transition-duration: .5s;
+}
+
+div#test {
+    display: inline-block;
+    border-radius: 30px;
+    border: 2px solid red;
+    margin: 20px 15px 15px 15px;
+    box-shadow: 0px 0px 8px #0000008d;
+}

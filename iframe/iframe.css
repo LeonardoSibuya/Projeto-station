@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'plays';
+    src: url('../playstation.ttf'); format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'space';
+    src: url('../space.ttf'); format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+:root {
+    --cor1: #c7c7cc;
+    --cor2: #0077E2;
+    --cor3: #519ff9a1;
+    --cor4: #1353D4;
+    --cor5: #003B9B;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    text-align: center;
+}
+
+header > h1 {
+    color: #000000;
+    margin: 10px;
+    font-family: plays;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 1px #00000084;
+}
+
+main {
+    margin: auto;
+    text-align: center;
+}
+
+div.subt > h2 {
+    color: #2c2929e0;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0px 10px 0px;
+    margin: auto;
+    text-shadow: 1px 1px 1px #0000008c;
+}
+
+article#detail {
+    margin: auto;
+    text-align: center;
+}
+
+article#detail > p {
+    font-family: 'Roboto Mono', monospace ,Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-weight: 600;
+
+    max-width: 500px;
+    margin: auto;
+    text-indent: 15px;
+    line-height: 1.5em;
+
+    padding: 10px 15px 10px 15px;
+}
+
+div.video {
+    padding: 10px;
+    
+    border-radius: 10px;
+    background-color: #000000;
+}
+ 

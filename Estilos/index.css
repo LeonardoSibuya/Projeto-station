@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'plays';
+    src: url('../playstation.ttf'); format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'space';
+    src: url('../space.ttf'); format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+:root {
+    --cor1: #c7c7cc;
+    --cor2: #0077E2;
+    --cor3: #519ff9a1;
+    --cor4: #1353D4;
+    --cor5: #003B9B;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor3);
+    min-height: 100vh;
+}
+
+header {
+    background-image: linear-gradient(to right, var(--cor5), var(--cor2));
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    margin: 0px 15px 0px 15px;
+    box-shadow: 0px 0px 10px #00000084;
+}
+
+header > h1 {
+    color: var(--cor1);
+    max-width: 300px;
+    margin: auto;
+    font-family: plays;
+    font-size: 5em;
+    text-shadow: 2px 2px 0px #00000084;
+}
+
+header > p {
+    color: white;
+    padding-bottom: 3px;
+    text-shadow: 2px 2px 0px #00000084;
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    font-size: 14px;
+}
+
+nav {
+    background-color: var(--cor5);
+    margin: 0px 15px 0px 15px;
+    padding: 0px 0px 13px 20px;
+    border-radius: 0px 0px 30px 30px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor2));
+}
+
+nav > a {
+    font-family: plays;
+    font-size: 15px;
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 10px;
+    transition-duration: .5s;
+    text-shadow: 2px 2px 0px #00000084;
+}
+
+nav a:hover {
+    background-color: var(--cor4);
+    color: #55f6ff;
+    
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #0000008d;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    background-color: var(--cor1);
+}
+
+article > h2 {
+    background-image: linear-gradient(to right, #1353d4c3, #0078e204);
+    border-radius: 25px 0px 0px 25px;
+    max-width: 250px;
+    padding: 5px 0px 5px 0px;
+    color: #2c2929e0;
+    text-align: center;
+    font-size: 3em;
+    font-family: space, Arial, Helvetica, sans-serif;
+    text-decoration: dashed;
+    margin: auto;
+    text-shadow: 1px 0px 2px #0000008c;
+}
+
+article > a > div.imghome {
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 35vh;
+    border: 1px solid #1353D4;
+    margin: 10px 10px 30px 10px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #0000008d;
+}
+
+div#games {
+    background-image: url(../imagens/Foto\ controle-full.jpg);
+}
+
+div#filmes {
+    background-image: url(../imagens/foto\ cinema-full.jpg);
+}
+
+div#series {
+    background-image: url(../imagens/Foto\ serie\ full.jpg);
+}
+
+article > a > div.imghome:hover {
+    box-shadow: 0px 0px 20px #0b5cff; 
+}
+
+footer {
+    text-align: center;
+    background-image: linear-gradient(to right, var(--cor5), var(--cor2));
+    margin: 0px 13px 0px 13px;
+    box-shadow: 0px 0px 10px #00000084;
+    border-radius: 30px 30px 0px 0px;
+    padding: 13px 6px 8px 6px;
+}
+
+footer > p {
+    display: inline;
+    font-weight: bold;
+    font-family: plays;
+    text-shadow: 2px 2px 0px #00000084;
+    color: var(--cor1);
+    padding: 0px 1em 0px 1em;
+    max-width: 300px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+footer a:hover {
+    text-decoration: underline;
+    transition-duration: .5s;
+}
