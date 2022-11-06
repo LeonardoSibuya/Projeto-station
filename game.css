@@ -27,32 +27,36 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 
 body {
     background-color: var(--cor3);
     min-height: 100vh;
+    min-width: 768px;
 }
 
 header {
     background-image: linear-gradient(to right, var(--cor5), var(--cor2));
-    padding: 0px;
-    text-align: center;
-    margin: 0px 15px 0px 15px;
     box-shadow: 0px 0px 10px #00000084;
+    
+    text-align: center;
+
+    margin: 0px 15px 0px 15px;
+    
+
+    
 }
 
 header > h1 {
     color: var(--cor1);
-    max-width: 300px;
+    
     margin: auto;
     font-family: plays;
     font-size: 2.5em;
     text-shadow: 2px 2px 0px #00000084;
 }
 
-header > a {
+header > h1 > a {
     text-decoration: none;
     color: var(--cor1);
     max-width: 300px;
@@ -61,8 +65,8 @@ header > a {
     text-shadow: 2px 2px 0px #00000084;
 }
 
-header > a:hover {
-    font-size: 20px;
+header > h1 > a:hover {
+    font-size: 1.2em;
     transition: 0.5s;
 }
 
@@ -73,6 +77,7 @@ nav {
     border-radius: 0px 0px 30px 30px;
     margin-bottom: 10px;
     background-image: linear-gradient(to right, var(--cor5), var(--cor2));
+    
 }
 
 nav > a {
@@ -94,9 +99,10 @@ nav a:hover {
 }
 
 main {
-    height: 90vh;
-    min-width: 300px;
-    max-width: 1400px;
+    height: 90%;
+    width: 90%;
+    
+
     margin: auto;
     padding: 20px;
     box-shadow: 0px 0px 10px #0000008d;
@@ -131,17 +137,20 @@ article#titulo p {
 
 article#conteudo {
     margin: auto;
+    text-align: center;
 }
 
 div.jogo {
     display: inline-block;
     margin: 20px 15px 15px 15px;
+
     height: 140px;
     width: 240px;
 
     background-color: white;
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
 
     border-radius: 30px;
     border: 1px solid var(--cor4);
@@ -150,8 +159,8 @@ div.jogo {
 
 a > div.jogo:hover {
     box-shadow: 0px 0px 10px #0b5cff;
-    height: 150px;
-    width: 250px;
+    height: 148px;
+    width: 248px;
     transition: 0.5s;
     transition-timing-function: ease;
 }
@@ -164,10 +173,26 @@ div#gow {
     background-image: url(imagens/God_of_War_2018_red.png);
 }
 
+div#ow {
+    background-image: url(imagens/Overwatch-red.jpg);
+}
+
+div#bf {
+    background-image: url(imagens/bf5-red.jpg);
+}
+
+div#rocket {
+    background-image: url(imagens/rocket-league-red.png);
+}
+
+div#returnal {
+    background-image: url(imagens/returnal-red.jpg);
+}
+
 iframe#game {
     display: block;
-    height: 55%;
-    width: 60%;
+    height: 350px;
+    width: 600px;
 
     padding: 10px;
     
@@ -184,11 +209,16 @@ iframe#game {
 
 footer {
     text-align: center;
+
     background-image: linear-gradient(to right, var(--cor5), var(--cor2));
-    margin: 0px 13px 0px 13px;
+
+    margin: 10px 13px 0px 13px;
+    padding: 13px 6px 8px 6px;
+    
+
     box-shadow: 0px 0px 10px #00000084;
     border-radius: 30px 30px 0px 0px;
-    padding: 13px 6px 8px 6px;
+    
 }
 
 footer > p {
